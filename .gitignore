@@ -1,0 +1,6 @@
+.idea
+.vscode
+.run
+.mlkit
+
+__pycache__/

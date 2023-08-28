@@ -1,0 +1,28 @@
+{% set mlkit_libraries = {
+    "Mlkit": "/docs/mlkit",
+    "Mlkit mech": "/docs/mech",
+    "Mlkit vision": "/docs/vision",
+    "Mlkit robot": "/docs/robot",
+    "Mlkit gym": "/docs/gym",
+    "Mlkit memory": "/docs/memory",
+    "Mlkit builder": "/docs/builder",
+    "Mlkit models": "/docs/models",
+    "Mlkit ecosystem": "/docs/ecosystem",
+} %}
+
+<nav class="bd-docs-nav bd-links">
+    <div class="bd-toc-item navbar-nav">
+        <p aria-level="2" class="caption" role="heading">
+            <span class="caption-text">Docs</span>
+        </p>
+        <ul class="nav bd-sidenav">
+            {% for title, link in mlkit_libraries.items() -%}
+            <li class="toctree-l1">
+                <a class="reference external" href="{{link}}">
+                    {{ title }}
+                </a>
+            </li>
+            {% endfor -%}
+        </ul>
+    </div>
+</nav>
